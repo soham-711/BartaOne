@@ -25,7 +25,7 @@ export default function BroadCasterSignIn() {
 
       if (valid) {
         alert("Login successful!");
-        navigate("/dashboard"); // or whatever route after login
+        navigate("/broadcaster-dashboad"); // or whatever route after login
       } else {
         setError("Invalid email or password");
       }

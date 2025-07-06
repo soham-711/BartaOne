@@ -9,7 +9,9 @@ import Promo3 from "./components/promo3";
 import UserSignIn from "./auth/userSignIn";
 import Dashboard from "./pages/viewers/Dashboard";
 import News from "./pages/viewers/News";
+import BroadcasterDashboard from "./pages/broadcasster/BroadCasterDashboad";
 
+import BroadcasterUpload from "./components/BroadcasterUpload";
 
 export default function App() {
   return (
@@ -22,7 +24,9 @@ export default function App() {
       <Route path="/promo3" element={<Promo3 />} />
       <Route path="/user-signin" element={<UserSignIn />} />
       <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="/news" element={<News/>} />
+      <Route path="/news" element={<News />} />
+      <Route path="/broadcaster-dashboad" element={<BroadcasterDashboard/>} />
+      <Route path="/upload" element={<BroadcasterUpload/>} />
     </Routes>
   );
 }
